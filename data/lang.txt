@@ -1,0 +1,3 @@
+element;hu;en
+lang1;Teszt;Test
+lang2;Alma;Apple
