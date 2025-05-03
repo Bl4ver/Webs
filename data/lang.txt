@@ -1,3 +1,5 @@
-element;hu;en
-lang1;Teszt;Test
-lang2;Alma;Apple
+element;hu;en;fr;de
+nav-item;Főoldal1;Home1
+nav-item;Főoldal2;Home2
+nav-item;Főoldal3;Home3
+nav-item;Főoldal4;Home4
