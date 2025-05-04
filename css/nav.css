@@ -6,6 +6,7 @@ nav {
     transition: 0.125s all;
     align-items: center;
     justify-content: center;
+    transition: 0.125s all;
 }
 
 #nav-container {
@@ -71,9 +72,16 @@ nav {
         background-color: var(--onyx);
         padding: 10px;
         z-index: 2;
+        opacity: 0;
+        transition: 0.225s all;
+        transition-behavior: allow-discrete;
     }
 
     #nav-items.active {
         display: flex;
+        opacity: 1;
+        @starting-style{
+            opacity: 0;
+        }
     }
 }
