@@ -1,6 +1,5 @@
 nav {
-    height: fit-content;
-    min-height: 7.5vh;
+    height: 7.5vh;
     width: 100%;
     background: var(--onyx);
     transition: 0.125s all;
@@ -10,38 +9,49 @@ nav {
 }
 
 #nav-container {
-    padding: 3px 15%;
-    min-height: 7.5vh;
-    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 15%;
 }
 
 #nav-logo {
+    height: 50px;
     img {
-        height: 50px;
+        height: 100%;
     }
 }
 
 #nav-items {
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: end;
     gap: 10px;
 
-    div a{
+    div a {
         text-decoration: none;
         color: var(--pure-white);
         font-size: 22.5px;
         font-weight: bold;
         font-family: Calibri;
     }
+    div a:hover{
+        font-size: 26px;
+    }
 }
 
-#language-select{
+.nav-item {
+    height: 7.5vh;
+    min-width: 10%;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#language-select {
     font-size: 18px;
     border: 2px solid var(--licorice);
     border-radius: 10px;
@@ -49,16 +59,23 @@ nav {
     cursor: pointer;
 }
 
-.nav-item, .nav-item, .nav-item, .nav-item {
-    min-width: 10%;
-    text-align: center;
+#active{
+    background-color: var(--licorice);
+    border: 1px solid var(--pure-black);
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 850px) {
-    #nav-container{
+.footer-icon{
+    height: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    #nav-container {
         flex-direction: column;
         position: relative;
-        img{
+        justify-content: center;
+
+        img {
             cursor: pointer;
         }
     }
@@ -69,7 +86,7 @@ nav {
         position: absolute;
         top: 100%;
         width: 100vw;
-        background-color: var(--onyx);
+        background-color: hsl(from var(--onyx) h s l / 0.98);
         padding: 10px;
         z-index: 2;
         opacity: 0;
@@ -83,5 +100,10 @@ nav {
         @starting-style{
             opacity: 0;
         }
+    }
+
+    #active{
+        background-color: hsl(from var(--licorice) h s l / 0.7);
+        width: 100%;
     }
 }

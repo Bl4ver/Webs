@@ -1,5 +1,6 @@
 element;hu;en;fr;de
-nav-item;Főoldal1;Home1
-nav-item;Főoldal2;Home2
-nav-item;Főoldal3;Home3
-nav-item;Főoldal4;Home4
+nav-item;Főoldal;Home;Accueil;Start
+nav-item;Itallap;Drinks;Boissons;Getränke
+nav-item;Rólunk;About Us;À propos;Über uns
+nav-item;Kapcsolat;Contact;Contact;Kontakt
+text-box;Kínálatunkban megtalálhatóak a klasszikus kávék, frissítő limonádék és ízletes péksütemények. Hangulatos belső terünk és udvarias kiszolgálásunk garantálja, hogy nálunk mindig otthon érezheti magát.;Our selection includes classic coffees, refreshing lemonades, and delicious pastries. With our cozy interior and courteous service, we guarantee that you will always feel at home with us.;Notre offre comprend des cafés classiques, des citronnades rafraîchissantes et de délicieuses viennoiseries. Grâce à notre intérieur chaleureux et à notre service attentionné, nous vous garantissons que vous vous sentirez toujours chez vous chez nous.;In unserem Angebot finden Sie klassische Kaffees, erfrischende Limonaden und leckeres Gebäck. Mit unserem gemütlichen Innenraum und dem zuvorkommenden Service garantieren wir, dass Sie sich bei uns immer wie zu Hause fühlen.
