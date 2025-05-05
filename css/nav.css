@@ -60,13 +60,19 @@ nav {
 
 #active{
     background-color: var(--licorice);
+    border: 1px solid var(--pure-black);
     border-radius: 10px;
 }
 
-@media screen and (max-width: 850px) {
+.footer-icon{
+    height: 25px;
+}
+
+@media screen and (max-width: 1024px) {
     #nav-container {
         flex-direction: column;
         position: relative;
+        justify-content: center;
 
         img {
             cursor: pointer;
