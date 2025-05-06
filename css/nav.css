@@ -18,6 +18,7 @@ nav {
 
 #nav-logo {
     height: 50px;
+
     img {
         height: 100%;
     }
@@ -37,7 +38,8 @@ nav {
         font-weight: bold;
         font-family: Calibri;
     }
-    div a:hover{
+
+    div a:hover {
         font-size: 26px;
     }
 }
@@ -59,13 +61,13 @@ nav {
     cursor: pointer;
 }
 
-#active{
+#active {
     background-color: var(--licorice);
     border: 1px solid var(--pure-black);
     border-radius: 10px;
 }
 
-.footer-icon{
+.footer-icon {
     height: 25px;
 }
 
@@ -97,12 +99,13 @@ nav {
     #nav-items.active {
         display: flex;
         opacity: 1;
-        @starting-style{
+
+        @starting-style {
             opacity: 0;
         }
     }
 
-    #active{
+    #active {
         background-color: hsl(from var(--licorice) h s l / 0.7);
         width: 100%;
     }
