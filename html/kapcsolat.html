@@ -47,56 +47,88 @@
     </header>
 
     <main id="rolunk-main">
-        <section id="opening-hours-container" class="card-container">
-            <h2 id="opening-hours-title" class="card-title">Nyitvatartás</h2>
-            <div id="opening-hours-body" class="card-body">
-                <div class="form-group">
-                    <p>Hétfő:</p>
-                    <p> 08:00 - 20:00</p>
-                </div>
-                <div class="form-group">
-                    <p>Hétfő:</p>
-                    <p> 08:00 - 20:00</p>
-                </div>
-                <div class="form-group">
-                    <p>Hétfő:</p>
-                    <p> 08:00 - 20:00</p>
-                </div>
-                <div class="form-group">
-                    <p>Hétfő:</p>
-                    <p> 08:00 - 20:00</p>
-                </div>
-            </div>
+        <section class="cards-container">
+            <section id="reservation-container" class="card-container">
+                <h2 id="reservation-title" class="card-title">
+                    Asztalfoglalás
+                </h2>
+                <form action="https://api.web3forms.com/submit" method="POST" id="reservation-form" class="card-body">
+                    <input type="hidden" name="access_key" value="4b1638d2-24d5-4a9d-84f3-91995b12e321">
 
+                    <div id="name-container" class="form-group">
+                        <input type="text" name="surname" id="surname-input" placeholder="Vezetéknév" required>
+                        <input type="text" name="surname" id="firstname-input" placeholder="Keresztnév" required>
+                    </div>
+                    <div id="email-container" class="form-group">
+                        <input type="email" name="email" id="email-input" placeholder="E-mail cím" required>
+                    </div>
+                    <div id="phone-container" class="form-group">
+                        <input type="tel" name="phone" id="phone-input" placeholder="Telefonszám" required>
+                    </div>
+                    <div id="date-container" class="form-group">
+                        <input type="date" name="date" id="date-input" required>
+                        <input type="time" name="time" id="time-input" required>
+                    </div>
+                    <div id="people-container" class="form-group">
+                        <input type="number" name="people" id="people-input" placeholder="Főszám" min="1" max="8"
+                            required>
+                    </div>
+                    <div id="message-container" class="form-group">
+                        <textarea name="message" id="message-input" placeholder="Megjegyzés"></textarea>
+                    </div>
+                    <button type="submit">Foglalás</button>
+                </form>
+            </section>
         </section>
-
-        <section id="reservation-container" class="card-container">
-            <h2 id="reservation-title" class="card-title">Asztalfoglalás</h2>
-            <form action="https://api.web3forms.com/submit" method="POST" id="reservation-form" class="card-body">
-                <input type="hidden" name="access_key" value="4b1638d2-24d5-4a9d-84f3-91995b12e321">
-
-                <div id="name-container" class="form-group">
-                    <input type="text" name="surname" id="surname-input" placeholder="Vezetéknév" required>
-                    <input type="text" name="surname" id="firstname-input" placeholder="Keresztnév" required>
+        <section class="cards-container">
+            <section id="opening-hours-container" class="card-container">
+                <h2 id="opening-hours-title" class="card-title">
+                    Nyitvatartás
+                </h2>
+                <div id="opening-hours-body" class="card-body">
+                    <div class="form-group">
+                        <h1 id="monday">Hétfő:</h1>
+                        <p>08:00 - 20:00</p>
+                    </div>
+                    <div class="form-group">
+                        <h1 id="tuesday">Kedd:</h1>
+                        <p>08:00 - 20:00</p>
+                    </div>
+                    <div class="form-group">
+                        <h1 id="wednesday">Szerda:</h1>
+                        <p>08:00 - 20:00</p>
+                    </div>
+                    <div class="form-group">
+                        <h1 id="thursday">Csütörtök:</h1>
+                        <p>08:00 - 20:00</p>
+                    </div>
+                    <div class="form-group">
+                        <h1 id="friday">Péntek:</h1>
+                        <p>08:00 - 20:00</p>
+                    </div>
+                    <div class="form-group">
+                        <h1 id="saturday">Szombat:</h1>
+                        <p>08:00 - 20:00</p>
+                    </div>
+                    <div class="form-group">
+                        <h1 id="sunday">Vasárnap:</h1>
+                        <p>08:00 - 20:00</p>
+                    </div>
                 </div>
-                <div id="email-container" class="form-group">
-                    <input type="email" name="email" id="email-input" placeholder="E-mail cím" required>
+            </section>
+            <section id="contact-container" class="card-container">
+                <h2 id="contact-title" class="card-title">Elérhetőség:</h2>
+                <div id="contact-body" class="card-body">
+                    <div class="form-group">
+                        <h1 id="email">Email:</h1>
+                        <p>valami@gmail.com</p>
+                    </div>
+                    <div class="form-group">
+                        <h1 id="phone">Telefonszám:</h1>
+                        <p>+36 20 123 4567</p>
+                    </div>
                 </div>
-                <div id="phone-container" class="form-group">
-                    <input type="tel" name="phone" id="phone-input" placeholder="Telefonszám" required>
-                </div>
-                <div id="date-container" class="form-group">
-                    <input type="date" name="date" id="date-input" required>
-                    <input type="time" name="time" id="time-input" required>
-                </div>
-                <div id="people-container" class="form-group">
-                    <input type="number" name="people" id="people-input" placeholder="Főszám" min="1" max="8" required>
-                </div>
-                <div id="message-container" class="form-group">
-                    <textarea name="message" id="message-input" placeholder="Megjegyzés"></textarea>
-                </div>
-                <button type="submit">Foglalás</button>
-            </form>
+            </section>
         </section>
     </main>
 

@@ -8,9 +8,14 @@
     --caramel: #c08552;
     --onyx: #353935;
     --licorice: #1b1212;
+    --gray: #666;
 
     --pure-black: #000000;
     --pure-white: #ffffff;
+
+    --size--5: clamp(0.625rem, 0.5604rem + 0.3525vw, 1.0rem);
+    --size--4: clamp(0.75rem, 0.6504rem + 0.4525vw, 1.25rem);
+    --size--3: clamp(0.8889rem, 0.8004rem + 0.5525vw, 1.5rem);
 
     --size--2: clamp(1.2346rem, 1.0885rem + 0.7303vw, 2.2569rem);
     --size--1: clamp(1.3889rem, 1.2004rem + 0.9425vw, 2.7083rem);
@@ -35,5 +40,12 @@ main {
     flex-direction: column;
     align-items: center;
 
-    padding: 100px 0;
+    padding: 100px 50px;
+}
+
+@media (max-width: 625px) {
+    main {
+        padding: 50px 25px;
+    }
+    
 }
