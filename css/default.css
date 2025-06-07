@@ -52,3 +52,11 @@ main {
     }
     
 }
+
+@media (min-width: 1500px) {
+    main {
+        max-width: 1700px;
+        padding: 100px auto;
+        margin: 0 auto;
+    }
+}
