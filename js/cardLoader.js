@@ -17,7 +17,7 @@ function createCard(cardData) {
     const cardPrice = document.createElement('div');
     cardPrice.classList.add('card-price');
     const pPrice = document.createElement('p');
-    pPrice.textContent = cardData.Ár + " Ft";
+    pPrice.textContent = cardData.Ár /*+ " Ft"*/;
     cardPrice.appendChild(pPrice);
 
     card.appendChild(cardTitle);
