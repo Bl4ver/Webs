@@ -12,7 +12,7 @@
 
     <script src="../js/nav.js" defer></script>
     <script src="../js/header.js" defer></script>
-    <script src="../js/excelReader.js" defer></script>
+    <script src="../js/cardLoader.js" defer></script>
     <title>BÉCSI CAFE & BAR</title>
 </head>
 
@@ -46,128 +46,53 @@
         </div>
     </header>
 
-    <input type="file" id="upload" accept=".xlsx, .xls" />
     <main>
-        <!-- Caffees -->
-        <h1 class="section-title">Kávékínálat</h1>
-        <section class="card-holder" data-section="Kávékínálat">
+        <!-- Kávék -->
+        <h1 class="section-title">Kávék</h1>
+        <section class="card-holder" data-section="Kávék">
             <!-- ide jönnek a kártyák -->
         </section>
 
-
-
-        <!-- Drinks -->
-        <h1 class="section-title">Italkínálat</h1>
-        <section class="card-holder" data-section="Italkínálat">
+        <!-- Jeges Kávék -->
+        <h1 class="section-title">Alkoholos Kávék</h1>
+        <section class="card-holder" data-section="Jeges Kávék">
             <!-- ide jönnek a kártyák -->
         </section>
 
-        <!-- Alcoholic Drinks -->
-        <h1 class="section-title">Alkoholos Italkínálat</h1>
-        <section class="card-holder">
-
-            <div class="card">
-                <div class="card-title">
-                    <h1>Latte</h1>
-                </div>
-                <div class="card-description">
-                    <p>valami valami valami</p>
-                </div>
-                <div class="card-price">
-                    <p>5000 Ft</p>
-                </div>
-            </div>
-
-
-            <div class="card">
-                <div class="card-title">
-                    <h1>Latte</h1>
-                </div>
-                <div class="card-description">
-                    <p>valami valami valami</p>
-                </div>
-                <div class="card-price">
-                    <p>5000 Ft</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-title">
-                    <h1>Latte</h1>
-                </div>
-                <div class="card-description">
-                    <p>valami valami valami</p>
-                </div>
-                <div class="card-price">
-                    <p>5000 Ft</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-title">
-                    <h1>Latte</h1>
-                </div>
-                <div class="card-description">
-                    <p>valami valami valami</p>
-                </div>
-                <div class="card-price">
-                    <p>5000 Ft</p>
-                </div>
-            </div>
+        <!-- Alkoholos Kávék -->
+        <h1 class="section-title">Alkoholos Kávék</h1>
+        <section class="card-holder" data-section="Alkoholos Kávék">
+            <!-- ide jönnek a kártyák -->
         </section>
 
-        <!-- Foods -->
-        <h1 class="section-title">Ételkínálat</h1>
-        <section class="card-holder">
+        <!-- Meleg Italok -->
+        <h1 class="section-title">Meleg Italok</h1>
+        <section class="card-holder" data-section="Meleg Italok">
+            <!-- ide jönnek a kártyák -->
+        </section>
 
-            <div class="card">
-                <div class="card-title">
-                    <h1>Latte</h1>
-                </div>
-                <div class="card-description">
-                    <p>valami valami valami</p>
-                </div>
-                <div class="card-price">
-                    <p>5000 Ft</p>
-                </div>
-            </div>
+        <!-- Teák -->
+        <h1 class="section-title">Teák</h1>
+        <section class="card-holder" data-section="Teák">
+            <!-- ide jönnek a kártyák -->
+        </section>
 
+        <!-- Üdítők -->
+        <h1 class="section-title">Üdítők</h1>
+        <section class="card-holder" data-section="Üdítők">
+            <!-- ide jönnek a kártyák -->
+        </section>
 
-            <div class="card">
-                <div class="card-title">
-                    <h1>Latte</h1>
-                </div>
-                <div class="card-description">
-                    <p>valami valami valami</p>
-                </div>
-                <div class="card-price">
-                    <p>5000 Ft</p>
-                </div>
-            </div>
+        <!-- Limonádék -->
+        <h1 class="section-title">Limonádék</h1>
+        <section class="card-holder" data-section="Limonádék">
+            <!-- ide jönnek a kártyák -->
+        </section>
 
-            <div class="card">
-                <div class="card-title">
-                    <h1>Latte</h1>
-                </div>
-                <div class="card-description">
-                    <p>valami valami valami</p>
-                </div>
-                <div class="card-price">
-                    <p>5000 Ft</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-title">
-                    <h1>Latte</h1>
-                </div>
-                <div class="card-description">
-                    <p>valami valami valami</p>
-                </div>
-                <div class="card-price">
-                    <p>5000 Ft</p>
-                </div>
-            </div>
+        <!-- Shake-Smoothie-Frappé -->
+        <h1 class="section-title">Shake-Smoothie-Frappé</h1>
+        <section class="card-holder" data-section="Shake-Smoothie-Frappé">
+            <!-- ide jönnek a kártyák -->
         </section>
 
         <!-- Desserts -->
@@ -215,3 +140,62 @@
 </body>
 
 </html>
+
+
+
+
+<!-- Backup code for food section
+
+ <h1 class="section-title">Ételkínálat</h1>
+        <section class="card-holder">
+
+            <div class="card">
+                <div class="card-title">
+                    <h1>Latte</h1>
+                </div>
+                <div class="card-description">
+                    <p>valami valami valami</p>
+                </div>
+                <div class="card-price">
+                    <p>5000 Ft</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-title">
+                    <h1>Latte</h1>
+                </div>
+                <div class="card-description">
+                    <p>valami valami valami</p>
+                </div>
+                <div class="card-price">
+                    <p>5000 Ft</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <h1>Latte</h1>
+                </div>
+                <div class="card-description">
+                    <p>valami valami valami</p>
+                </div>
+                <div class="card-price">
+                    <p>5000 Ft</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">
+                    <h1>Latte</h1>
+                </div>
+                <div class="card-description">
+                    <p>valami valami valami</p>
+                </div>
+                <div class="card-price">
+                    <p>5000 Ft</p>
+                </div>
+            </div>
+        </section>
+ -->
