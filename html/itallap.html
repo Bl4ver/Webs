@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/itallap.css">
+    <link rel="stylesheet" href="../css/drink-slider.css">
 
     <script src="../js/nav.js" defer></script>
     <script src="../js/header.js" defer></script>
     <script src="../js/cardLoader.js" defer></script>
+    <script src="../js/drink-slider.js" defer></script>
     <title>BÉCSI CAFE & BAR</title>
 </head>
 
@@ -47,6 +49,26 @@
     </header>
 
     <main>
+        <div class="slider-container">
+            <!-- BAL NYÍL -->
+            <button class="slider-button prev">&larr;</button>
+            <div class="slider-wrapper">
+                <article class="slider-item"><h1>1. elem</h1></article>
+                <article class="slider-item"><h1>2. elem</h1></article>
+                <article class="slider-item"><h1>3. elem</h1></article>
+                <article class="slider-item"><h1>4. elem</h1></article>
+                <article class="slider-item"><h1>5. elem</h1></article>
+                <article class="slider-item"><h1>6. elem</h1></article>
+                <article class="slider-item"><h1>7. elem</h1></article>
+            </div>
+            <!-- JOBB NYÍL -->
+            <button class="slider-button next">&rarr;</button>
+
+            <!-- PONTOK -->
+            <div class="slider-pagination"></div>
+        </div>
+
+
         <!-- Kávék -->
         <h1 class="section-title">Kávék</h1>
         <section class="card-holder" data-section="Kávék">
