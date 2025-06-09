@@ -8,3 +8,14 @@ function toggleMenu() {
         }
     }
 };
+
+function changeNavIconOnWindowResize() {
+    if (window.innerWidth <= 1024) {
+        document.getElementById("menu").src = "../img/hamburger_icon.png";
+    } else {
+        document.getElementById("menu").src = "../img/becsi_logo.png";
+    }
+}
+
+window.addEventListener("resize", changeNavIconOnWindowResize);
+changeNavIconOnWindowResize();
